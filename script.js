@@ -69,3 +69,36 @@ function resizeImage() {
 }
 
 document.getElementById('btn-resize').addEventListener('click', resizeImage);
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch((error) => {
+        console.log('Service Worker registration failed:', error);
+      });
+  });
+}
+
+var startY, endY;
+
+// Touch screens
+document.addEventListener('touchstart', (event) => {
+  startY = event.touches[0].clientY;
+});
+
+document.addEventListener('touchend', (event) => {
+  endY = event.changedTouches[0].clientY;
+
+  // Calculating distance
+  const distanceY = endY - startY;
+
+  // Checks if swipe distance is at least 50 pixels
+  if (distanceY >= 50) {
+    // refresh
+    location.reload();
+  }
+});
