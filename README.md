@@ -20,9 +20,8 @@ To use the Image Resizer web app, follow these steps:
 2. Open the `index.html` file in a web browser.
 3. Upload an image file and specify the desired width and height dimensions.
 4. Click the "Resize Image" button to resize the image.
-5. The resized image will be displayed on the page.
-6. Right-click on the resized image and select the "Save image as..." option from the context menu.
-7. Choose the desired location on your device to save the resized image.
+5. The resized image will be displayed on the page and a download is automatically generated. Choose where to save it.
+6. You can also right-click on the resized image and select the "Save image as..." option from the context menu to choose the desired location on your device to save the resized image.
 
 ### Progressive Web App (PWA)
 
