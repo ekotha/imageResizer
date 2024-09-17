@@ -1,6 +1,7 @@
 # Image Resizer PWA
 
-You can view a live version of this quick tool here: https://tangibleplumpresource.eashankotha.repl.co
+You can view a live version of this quick tool here: ~~https://tangibleplumpresource.eashankotha.repl.co~~
+Due to changes in Replit deployments, I've taken the live demo offline.
 
 This is a simple image resizer web application implemented as a Progressive Web App (PWA). It allows users to upload an image, specify width and height dimensions, and resize the image accordingly. The resized image is displayed on the page and can be saved manually using the browser's context menu.
 
